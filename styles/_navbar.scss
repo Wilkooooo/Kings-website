@@ -1,4 +1,5 @@
 @import "colours";
+@import "media";
 @font-face {
     font-family: 'River';
     src: url("../fonts/Blank\ River.ttf");
@@ -31,12 +32,50 @@
             text-decoration: none;
             color: white;
             padding: 0 1rem;
+
+            @include tablet {
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
         }
         & a:hover {
             color: $orange;
             transition: all 0.2s;
         }
+
+        @include tablet {
+            position: relative;
+            display: grid;
+            z-index: 12;
+            background-color: #1b1b1b;
+            width: 300px;
+            height: 400px;
+            padding-bottom: 812px;
+            padding-top: 5rem;
+            top: -3.3rem;
+            padding-right: 2rem;
+            right: -2rem;
+            width: 0%;
+            transition: all 0.7s ease;
+        }
     }
-    
-    
+
+    &__bars {
+        color: white;
+        margin: 1rem 2rem;
+        font-size: 2rem;
+        display: none;
+        right: 1rem;
+        cursor: pointer;
+        position: absolute;
+
+        @include tablet {
+            display: block;
+            z-index: 15;
+        }
+    }
+
+    &__list.active {
+        width: 100%;
+    }
 }

@@ -1,4 +1,5 @@
 @import "navbar";
+@import "footer";
 
 * {
     margin: 0;
@@ -28,14 +29,33 @@ body {
     top: -35rem;
     color: white;
 
+    @include tablet {
+        margin-top: 5rem;
+    }
+
     & h1 {
         font-size: 4rem;
         font-weight: 400;
+
+        @include tablet {
+            font-size: 2rem;
+            margin: 2rem 3rem;
+        }
+    }
+
+    & p {
+        @include tablet {
+            font-size: .8rem;
+            margin: .5rem 3rem;
+        }
     }
 
     &__buttons {
         padding: 2rem;
-
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         &--1 {
             border-radius: 30px;
             border-style: solid;
@@ -50,6 +70,9 @@ body {
             cursor: pointer;
             position: relative;
             transition: all 0.35s;
+            @include tablet {
+                margin-left: .5rem;
+            }
         }
         &--1 a {
             z-index: 6;
