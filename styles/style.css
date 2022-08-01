@@ -41,24 +41,25 @@
 }
 @media screen and (max-width: 768px) {
   .navbar__list {
-    position: relative;
-    display: grid;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     z-index: 12;
     background-color: #1b1b1b;
-    width: 300px;
+    width: 200px;
     height: 400px;
     padding-bottom: 812px;
     padding-top: 5rem;
     top: -3.3rem;
-    padding-right: 2rem;
-    right: -2rem;
     width: 0%;
-    transition: all 0.7s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
   }
 }
 .navbar__bars {
   color: white;
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   display: none;
   right: 1rem;
@@ -73,10 +74,11 @@
 }
 .navbar__list.active {
   width: 100%;
+  opacity: 1;
 }
 
 * {
-  margin: 0;
+  margin: 0px 0px;
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -100,6 +102,7 @@ body {
   align-content: center;
   top: -35rem;
   color: white;
+  margin-top: 5rem;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -113,13 +116,13 @@ body {
 @media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
-    margin: 2rem 3rem;
+    padding: 2rem 3rem;
   }
 }
 @media screen and (max-width: 768px) {
   .hero p {
     font-size: 0.8rem;
-    margin: 0.5rem 3rem;
+    padding: 0.5rem 3rem;
   }
 }
 .hero__buttons {
@@ -141,7 +144,7 @@ body {
   border-color: #D95818;
   font-size: 1rem;
   font-weight: bold;
-  margin-right: 1.5rem;
+  padding-right: 1.5rem;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
@@ -167,7 +170,7 @@ body {
   border-color: #D95818;
   font-size: 1rem;
   font-weight: bold;
-  margin-right: 1.5rem;
+  padding-right: 1.5rem;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;

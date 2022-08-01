@@ -44,25 +44,26 @@
         }
 
         @include tablet {
-            position: relative;
-            display: grid;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             z-index: 12;
             background-color: #1b1b1b;
-            width: 300px;
+            width: 200px;
             height: 400px;
             padding-bottom: 812px;
             padding-top: 5rem;
             top: -3.3rem;
-            padding-right: 2rem;
-            right: -2rem;
             width: 0%;
-            transition: all 0.7s ease;
+            transition: all 0.4s ease;
+            opacity: 0;
         }
     }
 
     &__bars {
         color: white;
-        margin: 1rem 2rem;
+        padding: 1rem 2rem;
         font-size: 2rem;
         display: none;
         right: 1rem;
@@ -77,5 +78,7 @@
 
     &__list.active {
         width: 100%;
+        opacity: 1;
+        
     }
 }
