@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "River";
+  src: url("../fonts/Blank River.ttf");
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: relative;
+  padding: 0.5rem calc((100vw - 1500px) / 2);
+}
+.navbar__logo {
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-family: "River";
+  color: white;
+  padding: 0.3rem 1rem;
+  font-weight: 10;
+}
+.navbar__list {
+  margin-top: 1.8rem;
+  padding-right: 1rem;
+  font-size: 1.1rem;
+}
+.navbar__list a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+.navbar__list a:hover {
+  color: #D95818;
+  transition: all 0.2s;
+}
+
+* {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: #1B1B1B;
+}
+
+.header {
+  min-height: 85vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), center/cover url("../images/pic1.jpg");
+  position: relative;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  top: -35rem;
+  color: white;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.hero__buttons {
+  padding: 2rem;
+}
+.hero__buttons--1 {
+  border-radius: 30px;
+  border-style: solid;
+  height: 2.5rem;
+  width: 10rem;
+  background: transparent;
+  color: white;
+  border-color: #D95818;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+}
+.hero__buttons--1 a {
+  z-index: 6;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.hero__buttons--2 {
+  border-radius: 30px;
+  border-style: solid;
+  height: 2.5rem;
+  width: 10rem;
+  background: transparent;
+  color: white;
+  border-color: #D95818;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+}
+.hero__buttons--2 a {
+  z-index: 6;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+.hero__buttons--1:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #D95818;
+  transition: all 0.35s;
+  border-radius: 300px;
+  z-index: -1;
+}
+.hero__buttons--1:hover {
+  color: #fff;
+}
+.hero__buttons--1:hover:after {
+  width: 100%;
+  z-index: 5;
+}
+.hero__buttons--2:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  background: #D95818;
+  transition: all 0.35s;
+  border-radius: 300px;
+  z-index: -1;
+}
+.hero__buttons--2:hover {
+  color: #fff;
+}
+.hero__buttons--2:hover:after {
+  width: 100%;
+  z-index: 5;
+}/*# sourceMappingURL=style.css.map */

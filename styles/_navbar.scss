@@ -1,0 +1,42 @@
+@import "colours";
+@font-face {
+    font-family: 'River';
+    src: url("../fonts/Blank\ River.ttf");
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    padding: 0.5rem calc((100vw - 1500px) / 2);
+    
+    &__logo {
+        text-decoration: none;
+        font-size: 3.2rem;
+        font-family: "River";
+        color: white;
+        padding: .3rem 1rem;
+        font-weight: 10;
+    }
+
+    &__list {
+        margin-top: 1.8rem;
+        padding-right: 1rem;
+        font-size: 1.1rem;
+
+        & a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: white;
+            padding: 0 1rem;
+        }
+        & a:hover {
+            color: $orange;
+            transition: all 0.2s;
+        }
+    }
+    
+    
+}
