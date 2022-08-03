@@ -1,0 +1,71 @@
+
+.footer {
+
+    background: rgb(7, 7, 7);
+
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 4rem calc((100vw - 1500px) / 2);
+        justify-items: center;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            justify-items: left;
+            padding-left: 2rem;
+        }
+
+        &--list {
+            display: grid;
+            grid-template-columns: 1fr;
+            color: white;
+
+            & h2 {
+                padding: .7rem 0;
+
+                @include tablet {
+                    padding-top: 2rem;
+                }
+            }
+            
+            & a {
+                text-decoration: none;
+                color: white;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    &__paytypes {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 0;
+        background-color: $orange;
+        color: white;
+        padding: 1rem;
+
+        &--imgs {
+            
+            & img {
+                padding: 0 1rem;
+            }
+
+            &--s {
+                position: relative;
+                top: -22px;
+            }
+        }
+    }
+
+    &__bottomline{
+        padding: 1rem;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        font-size: 10px;
+    }
+}

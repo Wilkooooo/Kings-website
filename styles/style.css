@@ -77,6 +77,66 @@
   opacity: 1;
 }
 
+.footer {
+  background: rgb(7, 7, 7);
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem calc((100vw - 1500px) / 2);
+  justify-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+    justify-items: left;
+    padding-left: 2rem;
+  }
+}
+.footer__wrapper--list {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+}
+.footer__wrapper--list h2 {
+  padding: 0.7rem 0;
+}
+@media screen and (max-width: 768px) {
+  .footer__wrapper--list h2 {
+    padding-top: 2rem;
+  }
+}
+.footer__wrapper--list a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+}
+.footer__paytypes {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 0;
+  background-color: #D95818;
+  color: white;
+  padding: 1rem;
+}
+.footer__paytypes--imgs img {
+  padding: 0 1rem;
+}
+.footer__paytypes--imgs--s {
+  position: relative;
+  top: -22px;
+}
+.footer__bottomline {
+  padding: 1rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  font-size: 10px;
+}
+
 * {
   margin: 0px 0px;
   font-family: "Kumbh Sans", sans-serif;
@@ -144,7 +204,6 @@ body {
   border-color: #D95818;
   font-size: 1rem;
   font-weight: bold;
-  padding-right: 1.5rem;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
@@ -170,7 +229,6 @@ body {
   border-color: #D95818;
   font-size: 1rem;
   font-weight: bold;
-  padding-right: 1.5rem;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
