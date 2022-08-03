@@ -138,6 +138,62 @@
   font-size: 10px;
 }
 
+.categories {
+  padding: 4rem calc((100vw - 1500px) / 2);
+}
+.categories h1 {
+  color: #D95818;
+  text-align: center;
+  padding: 2rem 0;
+}
+.categories__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  justify-items: center;
+}
+@media screen and (max-width: 768px) {
+  .categories__wrapper {
+    grid-template-columns: 3fr 3fr;
+  }
+}
+.categories__wrapper--cards {
+  width: clamp(150px, 500px, 30.303030303vw);
+  height: clamp(150px, 500px, 30.303030303vw);
+  background: white;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.categories__wrapper--cards h2 {
+  color: white;
+  padding-top: clamp(1px, 430px, 25vw);
+  font-size: clamp(1px, 40px, 2.5vw);
+}
+.categories__wrapper--cards:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), center/cover url("/images/clothing.jpg");
+}
+.categories__wrapper--cards:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), center/cover url("/images/camping.jpg");
+}
+.categories__wrapper--cards:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), center/cover url("/images/hiking.jpg");
+}
+.categories__wrapper--cards:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), center/cover url("/images/cooking.jpg");
+}
+.categories__wrapper--cards:nth-child(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), center/cover url("/images/consumables.jpg");
+}
+.categories__wrapper--cards:nth-child(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), center/cover url("/images/solar.jpg");
+}
+.categories__wrapper--cards:hover {
+  transform: scale(120%);
+  transition: all 0.3s ease;
+}
+
 * {
   margin: 0px 0px;
   font-family: "Kumbh Sans", sans-serif;
