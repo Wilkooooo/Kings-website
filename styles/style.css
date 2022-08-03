@@ -90,7 +90,7 @@
   .footer__wrapper {
     grid-template-columns: 1fr;
     justify-items: left;
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
 }
 .footer__wrapper--list {
@@ -119,7 +119,7 @@
   margin: 0;
   background-color: #D95818;
   color: white;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .footer__paytypes--imgs img {
   padding: 0 1rem;
@@ -129,7 +129,8 @@
   top: -22px;
 }
 .footer__bottomline {
-  padding: 1rem;
+  margin: 0 1rem;
+  padding: 1rem 0;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
@@ -186,7 +187,7 @@ body {
   }
 }
 .hero__buttons {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 @media screen and (max-width: 768px) {
   .hero__buttons {

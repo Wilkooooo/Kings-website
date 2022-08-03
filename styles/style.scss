@@ -51,7 +51,7 @@ body {
     }
 
     &__buttons {
-        padding: 2rem;
+        padding: 2rem 0;
         @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;

@@ -13,7 +13,7 @@
         @include tablet {
             grid-template-columns: 1fr;
             justify-items: left;
-            padding-left: 2rem;
+            margin-left: 2rem;
         }
 
         &--list {
@@ -61,7 +61,8 @@
     }
 
     &__bottomline{
-        padding: 1rem;
+        margin: 0 1rem;
+        padding: 1rem 0;
         color: white;
         display: grid;
         grid-template-columns: 1fr;
